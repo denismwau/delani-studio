@@ -8,7 +8,6 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js "
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin=" anonymous "></script>
-    <script src="js/script.js "></script>
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"5b317f0d2f4b109b41711add3","lid":"8a0d014cbb","uniqueMethods":true}) })</script>
     <title>Delani Studio</title>
     <style>
@@ -19,13 +18,35 @@
                                         background-repeat: no-repeat;
                                         width: 100%;
                                     }</style>
+
+<script>
+    $(document).ready(function () {
+    $('.desg p').hide();
+    $('.desg').click(function () {
+        $('.desg p').toggle();
+        $('.desg img').toggle();
+    });
+
+    $('.devp p').hide();
+    $('.devp').click(function () {
+        $('.devp p').toggle();
+        $('.devp img').toggle();
+    });
+    
+    $('.prod p').hide();
+    $('.prod').click(function () {
+        $('.prod p').toggle();
+        $('.prod img').toggle();
+    });
+});
+</script>
 </head>
-<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
+<!-- <script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
         L.start({
             "baseUrl": "mc.us4.list-manage.com",
             "uuid": "e444ca8dc78acdb7791126dc2", "lid": "cae32c98e1", "uniqueMethods": true
         })
-    })</script>
+    })</script> -->
 <body>
     <div class="container-fluid">
         <div class="im">
@@ -41,6 +62,7 @@
                 <img src="css/assets/mouse_click.png"><br><br><br>
             </div>
         </div>
+
         <div class="h2h"><br><br><span class="col">
                 <h2>ABOUT US</h2><br>
                 <p>When you work with us, you are part of a team of committed collaborators.all aspects of our software
@@ -61,6 +83,7 @@
             </div><br>
             <br>
             <h4><b>WHAT WE DO</b></h4><br>
+
             <div class="row">
                 <div class="col-sm-4">
                     <div class="desg">
@@ -73,6 +96,8 @@
                             needed</p>
                     </div>
                 </div>
+                <br><br>
+
                 <div class="col-sm-4">
                     <div class="devp">
                         <img src="assets/services_icons/dev_icon.png">
@@ -97,12 +122,7 @@
             <div class="row1">
                 <div class="column1">
                     <div class="card">
-                        <img src="images/work1.jpg" width="100%">
-                    </div>
-                </div>
-                <div class="column1">
-                    <div class="card">
-                        <img src="images/work2.jpg" width="100%">
+                        <img src="images/work4.jpg" width="100%">
                     </div>
                 </div>
                 <div class="column1">
@@ -112,7 +132,12 @@
                 </div>
                 <div class="column1">
                     <div class="card">
-                        <img src="images/work4.jpg" width="100%">
+                        <img src="images/work2.jpg" width="100%">
+                    </div>
+                </div>
+                <div class="column1">
+                    <div class="card">
+                        <img src="images/work1.jpg" width="100%">
                     </div>
                 </div>
             </div>
@@ -149,7 +174,36 @@
           
         </div>
     </div>
-    <script src="js/script.js "></script>
+    <div class="form">
+            <div class="contact-section">
+              <h2 class="text-center text-white b-text">CONTACT US</h2><br>
+              <div class="col-md-12 input">
+                <form id="form">
+                  <div class="row">
+                    <div class="col-md-2 form"></div>
+                    <input class="col-md-4 form-control name" type="text" id="name" name="name" placeholder="Name..."
+                      required><br><br>
+                    <input class="col-md-4 form-control email" type="email" id="email" name="email" placeholder="Email..."
+                      required>
+                    <div class="col-md-2">
+                    </div>
+                  </div>
+                  <div class="row input">
+                    <div class="col-md-2"></div>
+                    <textarea class="form-control col-md-8 text" rows="12" name="message" id="message"
+                      placeholder="Your message here..."></textarea>
+                    <div class="col-md-2"></div>
+                  </div>
+                  <button class="btn btn-success mx-auto d-block submit" id="okButton" type="submit">Submit</button>
+                  <br>
+                </form>
+              </div>
+            </div>
+          </div>
+            
+
+        </form>
+    </div>
+
 </body>
 </html>
-html
