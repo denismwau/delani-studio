@@ -102,4 +102,31 @@
     position: relative;
     top: 30px;
 }
+/* .footer{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+} */
+.icon{
+    text-align: center;
+}
 
+#contact-form {
+    
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#okButton {
+    margin-left: 15rem;
+}
+
+#email {
+    margin-left: 10rem;
+}
+#message{
+    align-content: center;
+
+}
