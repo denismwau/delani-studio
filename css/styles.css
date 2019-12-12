@@ -26,14 +26,12 @@
 }
 
 .row {
-    columns: 4;
+    columns: 3;
     align-content: center;
-    width: 100%;
 }
 
 .desg p {
     display: none;
-    color: black;
 }
 
 .devp p {
@@ -70,7 +68,6 @@ h1 {
     display: flex;
 
 }
-
 /* .row1 {
     margin: 0 150px;
 }
@@ -150,10 +147,4 @@ h1 {
 #portfolio{
     display:flex;
     justify-content:space-between;
-}
-.whatwedo {
-    text-align: center;
-    font-size: 40px;
-    display: flex;
-
 }
